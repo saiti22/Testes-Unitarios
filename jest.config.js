@@ -6,10 +6,10 @@ module.exports = {
     ],
     coverageDirectory: 'coverage',
     testEnviroment: 'node',
-    testMatch: ['<rootDir>/src/tests/*.spec.ts'],
     coverageReporters: [
-        'test-summary',
+        'text-summary',
         'lcov'
     ],
     preset: 'ts-jest',    
+    testMatch: ['<rootDir>/src/tests/*.spec.ts'],    
 }
