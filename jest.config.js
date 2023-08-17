@@ -2,14 +2,14 @@ module.exports = {
     clearMocks: true,
     collectCoverage: true,
     collectCoverageFrom: [
-        '<rootDir>/src/controllers/*.ts'
+        '<rootDir>/src/usecases/*.ts'
     ],
     coverageDirectory: 'coverage',
-    testEnviroment: 'node',
+    testEnvironment: 'node',
     coverageReporters: [
         'text-summary',
         'lcov'
     ],
     preset: 'ts-jest',    
-    testMatch: ['<rootDir>/src/tests/*.spec.ts'],    
+    testMatch: ['<rootDir>/src/**/tests/*.spec.ts'],    
 }
